@@ -8,7 +8,8 @@ npm i numtowordconverter
 
 ## How to Use
 
-### Import Default Function
+#### Import Default Function
+##### Add Valid number as an argument. Other than number will through an error
 ```
 import numtowordconverter from "numtowordconverter"
 
@@ -18,7 +19,7 @@ console.log(numToWords)
 
 ```
  
-### It will return simple Object
+#### It will return simple Object
 
 ```
 {
@@ -28,7 +29,7 @@ console.log(numToWords)
   msg: 'number converted successfully'
 }
 ```
-### Object Detais
+#### Object Detais
 
 ```
 isNegative: Boolean
