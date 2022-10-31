@@ -26,7 +26,7 @@ console.log(numToWords)
   isNegative: false,
   numType: 'positive',
   numConvertedToWords: 'eight million seven hundred sixty two thousand seven hundred',
-  msg: 'number converted successfully'
+  msg: number converted successfully'
 }
 ```
 #### Object Detais
