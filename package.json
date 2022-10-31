@@ -1,6 +1,6 @@
 {
   "name": "numtowordconverter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package converts number to words. Range is from -100 Billion to 100 Billion i.e. -100000000000 to 100000000000",
   "main": "index.js",
   "type": "module",
