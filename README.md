@@ -35,6 +35,6 @@ console.log(numToWords)
 isNegative: Boolean
 numType: string,
 numConvertedToWords: string,
-msg: 'string
+msg: string
 
 ```
