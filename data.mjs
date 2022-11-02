@@ -52,4 +52,4 @@ export const oneToNinteenInt = [
     "nine",
   ];
   
- export const billion = ["billion", "million", "thousand", ""];
+ export const billion = ["trillion","billion", "million", "thousand", ""];

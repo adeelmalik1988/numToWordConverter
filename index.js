@@ -184,11 +184,13 @@ import { numToWord } from "./numToWord.mjs";
 
 export default function numtowordconverter(enteredNumber) {
   var returnObject = {
+    enteredNumber,
     isNegative: false,
     numType: "positive",
     numConvertedToWords: "",
-    msg: "",
+    errorMsg: "",
   };
+  let validRangeOfNumber = 15 ;   
   let enteredNumberConv = Number(enteredNumber);
   if (enteredNumberConv < 0) {
     returnObject.isNegative = true;
@@ -196,34 +198,34 @@ export default function numtowordconverter(enteredNumber) {
     // console.log("less", convetedNum.toString().length);
     // console.log("less", convetedNum.toString());
 
-    if (Math.abs(enteredNumberConv).toString().length <= 12) {
+    if (Math.abs(enteredNumberConv).toString().length <= validRangeOfNumber) {
       // console.log("-ve", convetedNum);
       returnObject.numConvertedToWords = convetedNum;
-      returnObject.msg = "number converted successfully";
+      returnObject.errorMsg = "number converted successfully";
     } else {
       // console.log("number is out of range");
-      returnObject.msg = "number is out of range";
+      returnObject.errorMsg = "number is out of range";
     }
   } else if (enteredNumber == "0") {
     // console.log("zero");
     returnObject.numConvertedToWords = "zero";
-    returnObject.msg = "number converted successfully";
-  } else if (enteredNumberConv.toString().length <= 12 && enteredNumberConv) {
+    returnObject.errorMsg = "number converted successfully";
+  } else if (enteredNumberConv.toString().length <= validRangeOfNumber && enteredNumberConv) {
 
     let convetedNum = numToWord(Math.abs(enteredNumberConv));
 
     // console.log(convetedNum);
 
     returnObject.numConvertedToWords = convetedNum;
-    returnObject.msg = "number converted successfully";
-  } else if (enteredNumberConv.toString().length > 12) {
+    returnObject.errorMsg = "number converted successfully";
+  } else if (enteredNumberConv.toString().length > validRangeOfNumber) {
     returnObject.numConvertedToWords = "";
-    returnObject.msg = "number is out of range";
+    returnObject.errorMsg = "number is out of range";
     // console.log("number is out of range");
   } else {
     // console.log("please enter valid number");
     returnObject.numConvertedToWords = "";
-    returnObject.msg = "please enter valid number";
+    returnObject.errorMsg = "please enter valid number";
   }
 
   returnObject.numType = returnObject.isNegative ? "negative" : "positive";
@@ -231,4 +233,7 @@ export default function numtowordconverter(enteredNumber) {
   return returnObject;
 }
 
-// console.log(numtowordconverter(93838));
+// console.log(numtowordconverter(0));
+// console.log((999999999999999).toString().length);
+
+

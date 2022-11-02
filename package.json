@@ -1,7 +1,7 @@
 {
   "name": "numtowordconverter",
   "version": "1.0.2",
-  "description": "This package converts number to words. Range is from -100 Billion to 100 Billion i.e. -100000000000 to 100000000000",
+  "description": "This package converts number to words. Range is from -999 Trillion to 999 Trillion i.e. -999999999999999 to 999999999999999",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -16,9 +16,12 @@
     "to",
     "word",
     "converter",
-    "converter",
-    "number",
-    "word"
+    "convertion",
+    "english",
+    "numbers",
+    "num",
+    "string",
+    "words"
   ],
   "author": "Adeel Malik",
   "license": "ISC",

@@ -21,11 +21,11 @@ export function numToWord(numToConv) {
 
   let compWord = [];
   // console.log(numWord.split(','))
-  let digitsInBillion = 12;
-  let appendZeros = digitsInBillion - numWord.length;
-  //   console.log(digitsInBillion - numWord.length);
+  let digitsInTrillion = 15;
+  let appendZeros = digitsInTrillion - numWord.length;
+  //   console.log(digitsInTrillion - numWord.length);
 
-  if (numWord.length != digitsInBillion) {
+  if (numWord.length != digitsInTrillion) {
     // console.log("leng", numWord.length);
     for (let i = 0; i < appendZeros; i++) {
       numWord = `0${numWord}`;

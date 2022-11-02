@@ -1,5 +1,8 @@
 # numToWordConverter
 
+## Description
+##### This package converts number into words. Range is from -999 Trillion to 999 Trillion i.e. -999999999999999 to 999999999999999"
+
 ## How to install
 
 ```
@@ -13,7 +16,7 @@ npm i numtowordconverter
 ```
 import numtowordconverter from "numtowordconverter"
 
-var numToWords = numtowordconverter(8762700) 
+var numToWords = numtowordconverter(-999999999999999) 
 
 console.log(numToWords)
 
@@ -23,18 +26,20 @@ console.log(numToWords)
 
 ```
 {
-  isNegative: false,
-  numType: 'positive',
-  numConvertedToWords: 'eight million seven hundred sixty two thousand seven hundred',
-  msg: number converted successfully'
+  enteredNumber: -999999999999999,
+  isNegative: true,
+  numType: 'negative',
+  numConvertedToWords: 'nine hundred ninty nine trillion nine hundred ninty nine billion nine hundred ninty nine million nine hundred ninty nine thousand nine hundred ninty nine',
+  errorMsg: 'number converted successfully'
 }
 ```
 #### Object Detais
 
 ```
+enteredNumber: number
 isNegative: Boolean
 numType: string,
 numConvertedToWords: string,
-msg: string
+errorMsg: string
 
 ```
