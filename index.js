@@ -190,8 +190,10 @@ export default function numtowordconverter(enteredNumber) {
     numConvertedToWords: "",
     errorMsg: "",
   };
+  
   let validRangeOfNumber = 15 ;   
   let enteredNumberConv = Number(enteredNumber);
+  console.log(enteredNumberConv)
   if (enteredNumberConv < 0) {
     returnObject.isNegative = true;
     let convetedNum = numToWord(Math.abs(enteredNumberConv));
@@ -233,7 +235,7 @@ export default function numtowordconverter(enteredNumber) {
   return returnObject;
 }
 
-// console.log(numtowordconverter(0));
+console.log(numtowordconverter("000001"));
 // console.log((999999999999999).toString().length);
 
 
